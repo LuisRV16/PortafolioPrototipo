@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animacionBarras.js"></script>
+    <style>
+        /* Cambia el color de fondo y texto de la pestaña activa */
+        .nav-link.active {
+            background-color: #0d6efd !important;
+            color: white;
+        }
+        
+        .nav-link:hover {
+            background-color: #d3d3d39f;
+            color: black;
+        }
+
+        /* Cambiar el color de los iconos de control a negro */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .nav {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            justify-content: center;
+            text-align: center;
+            background-color: white;
+        }
+
+        .carousel-caption h5 {
+            color: black;
+        }
+
+        .carousel-indicators button {
+            background-color: black !important; /* Color de los indicadores inactivos (por ejemplo, un tono de naranja) */
+        }
+
+        /* Cambiar el color de los indicadores cuando están activos */
+        .carousel-indicators .active {
+            background-color: #0d6efd !important; /* Color de los indicadores activos (por ejemplo, un tono de azul) */
+        }
+
+        .carousel-item {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <br>
+        <!-- Nav pills -->
+        <ul class="nav nav-pills fixed-top" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#acerca-de-mi">Acerca de mí</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#curriculum">Curriculum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#contacto">Contacto</a>
+            </li>
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="acerca-de-mi" class="container tab-pane active"><br>
+            <h2>Acerca de mí</h2>
+            <div class="acerca-de-mi">
+                <img src="images/foto fachera perfil.jpg" alt="Mi cara" class="fotografia">
+                <p>
+                    Hola, soy estudiante del Instituto Tecnológico de Ciudad Madero.
+                    Me encanta aprender nuevas tecnologías y estar actualizado en el mundo de la informática.
+                    Me apasiona la programación, la robótica y la nanotecnología.
+                </p>
+            </div>
+            <div class="redes-sociales">
+                <a class = "instagram" href="https://www.instagram.com/luis_ricardo1612/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class = "facebook" href="https://www.facebook.com/profile.php?id=100041156737659">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class = "youtube" href="https://www.youtube.com/@ricardovillar8649">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+          </div>
+          <div id="curriculum" class="container tab-pane fade"><br>
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-section">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML, CSS y JavaScript</li>
+                    <div class="language-bar" id = "progress-html">
+                        <div class="percentage" style="width: 40%;">40%</div>
+                    </div>
+                    <li>Java</li>
+                    <div class="language-bar" id = "progress-java">
+                        <div class="percentage" style="width: 50%;">50%</div>
+                    </div>
+                    <li>C/C++</li>
+                    <div class="language-bar" id = "progress-c++">
+                        <div class="percentage" style="width: 20%;">20%</div>
+                    </div>
+                    <li>C#</li>
+                    <div class="language-bar" id = "progress-c#">
+                        <div class="percentage" style="width: 30%;">30%</div>
+                    </div>
+                    <li>Python</li>
+                    <div class="language-bar" id = "progress-python">
+                        <div class="percentage" style="width: 25%;">25%</div>
+                    </div>
+                    <li>R</li>
+                    <div class="language-bar" id = "progress-r">
+                        <div class="percentage" style="width: 30%;">30%</div>
+                    </div>
+                    <li>Gestión de Base de Datos SQL (MySQL, MS SQL Server, PostgreSQL, SQLite)</li>
+                    <div class="language-bar" id = "progress-sql">
+                        <div class="percentage" style="width: 80%;">80%</div>
+                    </div>
+                    <li>Control de versiones (Git, Github, Gitlab)</li>
+                    <div class="language-bar" id = "progress-git">
+                        <div class="percentage" style="width: 50%;">50%</div>
+                    </div>
+                    <li>Haskell</li>
+                    <div class="language-bar" id = "progress-haskell">
+                        <div class="percentage" style="width: 40%;">40%</div>
+                    </div>
+                    <li>Kotlin</li>
+                    <div class="language-bar" id = "progress-kotlin">
+                        <div class="percentage" style="width: 10%;">10%</div>
+                    </div>
+                    <li>Linux (Ubuntu, Zorin)</li>
+                    <div class="language-bar" id = "progress-linux">
+                        <div class="percentage" style="width: 30%;">30%</div>
+                    </div>
+                </ul>
+                <h3>Experiencia Profesional</h3>
+                <ul>
+                    <li>
+                        <strong>Desarrollador Web Front-End</strong> - Gerisa Sistemas (2022 - 2024)
+                        <p>Responsable del diseño de sistemas ERP, utilizando tecnologías como CSS, Framework ZK, Idempiere y Java</p>
+                    </li>
+                </ul>
+                <h3>Educación</h3>
+                <ul>
+                    <li>
+                        <strong>Instituto Tecnológico de Ciudad Madero</strong>(2021 - Actualmente)
+                    </li>
+                    <li>
+                        <strong>2do Lugar en Concurso Interno ITCM</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>InnovaTecNM 2024 - Laberinto</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>TIDWIT - AWS Cloud Practitioner Essentials</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>TIDWIT - Fundamentos de Nube AWS</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>TIDWIT - ¿Qué es la nube?</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>Cisco Networking Academy - Python Essentials 1</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>Cisco Networking Academy - Python Essentials 2</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>Fundación Carlos Slim - Diseñador de peticiones para modelos de IA generativa</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>Emtech Institute & Santander Open Academy - Introducción a las Tecnologías Emergentes</strong> (Edición 2024)
+                    </li>
+                    <li>
+                        <strong>Microsoft - AZ - 500 Administrador de identidades y accesos</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>Microsoft - Crear una aplicación basada en modelo en Power Apps</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>Microsoft - Crear una aplicación de lienzo en Power Apps</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>Microsoft - Introducción al uso de Dataverse</strong> (2024)
+                    </li>
+                    <li>
+                        <strong>TecNM - Entendiendo el Calculo Integral</strong> (2023)
+                    </li>
+                    <li>
+                        <strong>Centro de Estudios de Bachillerato 6/15 "Maestro Lauro Aguirre"</strong> (2020)
+                        <p>Graduado a los 15 años, a través del ACREDITA-BACH Acuerdo 286</p>
+                    </li>
+                    <li>
+                        <strong>Escuela Secundaria General N°4 "Andrés Araujo Araujo"</strong> (2017 - 2019)
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div id="proyectos" class="container tab-pane fade"><br>
+            <h2>Proyectos</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://github.com/LuisRV16/Proyecto-IS-Sistema-de-Ventas-de-Reposteria/tree/master">
+                        <img src="images/img1.png" alt="Proyecto 1">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 1: Sistema de Ventas de Repostería</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/LuisRV16/Simulacion">
+                        <img src="images/img2.png" alt="Proyecto 2">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 2: Simulación de inventario</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/LuisRV16/Proyecto-TBD">
+                        <img src="images/img3.png" alt="Proyecto 3">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 3: Gestión de Evento de Robótica</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/LuisRV16/Proyecto-TBD">
+                        <img src="images/img4.png" alt="Proyecto 3">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 3: Gestión de Evento de Robótica</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/LuisRV16/calculoConjuntoPrimeroYSiguiente">
+                        <img src="images/img5.png" alt="Proyecto 4">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 4: Calculo del conjunto primero y conjunto siguiente</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/LuisRV16/Practicas-LyA-1/tree/master/EvaluacionDeGramatica">
+                        <img src="images/img6.png" alt="Proyecto 5">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 5: Evaluación de Gramatica</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/LuisRV16/Practicas-LyA-1/tree/master/CantidadLineasYPalabras">
+                        <img src="images/img7.png" alt="Proyecto 6">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyecto 6: Contador de Cantidad de Lineas y Palabras</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+          </div>
+        </div>
+        <div id="contacto" class="container tab-pane fade"><br>
+            <h2>Contacto</h2>
+            <ul>
+                <li>Teléfono: 833-407-7330</li>
+                <li>Correo institucional: L21070343@cdmadero.tecnm.mx</li>
+            </ul>
+            <div class="redes-sociales">
+                <a class = "instagram" href="https://www.instagram.com/luis_ricardo1612/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class = "facebook" href="https://www.facebook.com/profile.php?id=100041156737659">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class = "youtube" href="https://www.youtube.com/@ricardovillar8649">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+          </div>
+      </div>
+</body>
+</html>

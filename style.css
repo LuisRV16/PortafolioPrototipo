@@ -1,0 +1,124 @@
+.acerca-de-mi{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.acerca-de-mi .fotografia {
+    display: block;
+    width: auto;
+    height: 350px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.acerca-de-mi p {
+    margin-left: 40px;
+    font-size: 24px;
+    max-width: 600px;
+    color: #000000;
+    text-align: justify;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.redes-sociales a i {
+    padding: 3px 4px;
+}
+
+.instagram i:hover {
+    color: white;
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+    border-radius: 10px;
+}
+.facebook i:hover {
+    color: #3b5998;
+}
+
+.youtube i:hover{
+    color: #c4302b;
+}
+
+.cv-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #444;
+}
+
+.cv-section ul li strong {
+    display: block;
+    font-size: 18px;
+    color: #0d6efd;
+}
+
+.cv-section p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.cv-section ul li {
+    margin-bottom: 15px;
+}
+
+.language-bar {
+    width: 90%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.percentage {
+    background-color: #0d6efd;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .acerca-de-mi {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .acerca-de-mi .fotografia {
+        flex-direction: block;
+        width: 50%;
+        height: 50%;
+    }
+
+    .acerca-de-mi p {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+}
